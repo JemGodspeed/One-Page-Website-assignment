@@ -1,0 +1,31 @@
+
+p {
+    color: red;
+    font-style: italic;
+    border: 2px solid yellow;
+}
+
+
+body {
+    background-image: url('bookstore.jpg');
+    background-size: cover;
+    font-style: bold;	
+    	
+                  
+	}
+h3 { 
+  font-size: 56px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: IndianRed;
+  background-clip: text;
+  border:4px solid white;
+}
+h1 {
+	font-family: Gill Sans, Verdana;
+	font-size: 80px;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
