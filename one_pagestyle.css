@@ -1,31 +1,84 @@
 
 p {
-    color: red;
-    font-style: italic;
+    color: Salmon;
+    font-style: italic bold;
     border: 2px solid yellow;
+	font-size:40px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 
 body {
     background-image: url('bookstore.jpg');
-    background-size: cover;
-    font-style: bold;	
+    background-size: cover;	
     	
                   
 	}
 h3 { 
+  text-decoration:underline;
+  text-align:center;
   font-size: 56px;
   font-weight: 500;
-  background-image: linear-gradient(to left, #553c9a, #b393d3);
-  color: IndianRed;
-  background-clip: text;
-  border:4px solid white;
 }
 h1 {
+	
 	font-family: Gill Sans, Verdana;
 	font-size: 80px;
 	line-height: 50px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
+
+}
+.outlined {
+  text-align: center;
+  color: MistyRose;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.outlined2 {
+	  text-align: center;
+  color: Orchid;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.img_style{
+	border-radius:50%;
+	float:right;
+	margin-left:20px;
+	
+	
+}
+.img2 {
+	border-radius:60%;
+	margin-left:20px;
+	object-fit:cover;
+	object-position:right center;
+	
+}
+.img3  {
+	border-radius:50%;
+	object-fit:cover;
+	object-position:center;
+	margin-left:40px;
+}
+ul {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  color: DarkCyan;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0
+}
+li a:hover:not(.active) {
+  background-color: #111;
 }
