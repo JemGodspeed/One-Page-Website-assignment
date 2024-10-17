@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	  <meta charset="utf-8">
-	  <title>Gem Books</title>
-	 <link rel="stylesheet" type="text/css" href="one_pagestyle.css">
-	  </head>
-    
-	<!---this is where my body starts--->
-  <body>
-	      <h1 class="outlined">GEM BOOKS</h1>
-	        <h3 class="outlined2">Dont miss our weekly sales!</h3>
-		<div>
-		   <nav>
-              <ul>
-		        <li><a href="https://www.instagram.com/indigo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Our Socials!</a></li><br>
-		          <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">FAQ </a></li>
-		      </ul>
-			  </nav>
-		</div>
-		   
-		<div>
-      <img src="book.jpg"height='250px' width='250px'	class="img_style"><br>
-	  <img src="greatb.jpg" height='250px' width='250px'class="img2"  >
-	  <img src="fantasy.jpg" height='250px' width='250px' class="img3">
-	  	  <iframe width="560" height="315" 
-		  src="https://www.youtube.com/embed/YncSOWJ-kRs?si=PIr2CmOYLwjKukGY" 
-		  title="YouTube video player" frameborder="0" 
-		  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       </div><br>
-	 
-     </body>
-   
-   <!--- this will be my short footer--->	 
-    <footer>
-	   <p style="color: Aquamarine; font-size:24px">contact us!-Gem Books all rights reserved.<a href="https://www.instagram.com/indigo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-		 Click Me!!</a></p><br>
-	  <div style="color: mintcream;
-	        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	         font-size: 20px; 
-            font-weight: bold;">
-	    <form action="" method="get">
-	    First Name: <input type="text" name="first_name"><br>
-		Last Name: <input type="text" name="last name"><br>
-		e-mail: <input type="text" name="e_mail"><br>
-		Comment: <input type="text" name="comment" size="40"><br>
-		<input type="submit" value="submit"><br>
-   </form>
-      </div>
-	 
-	 </footer>
+<head>
+  <meta charset="utf-8">
+  <title>Gem Books</title>
+  <link rel="stylesheet" type="text/css" href="one_pagestyle.css">
+</head>
+
+<body>
+  <h1 class="outlined">GEM BOOKS</h1>
+  <h3 class="outlined2">Don't miss our weekly sales!</h3>
+
+  <div>
+    <nav>
+      <ul>
+        <li><a href="https://www.instagram.com/indigo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Our Socials!</a></li><br>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div>
+    <img src="book.jpg" height='250px' width='250px' class="img_style" onclick="openLightbox(0)">
+    <img src="greatb.jpg" height='250px' width='250px' class="img2" onclick="openLightbox(1)">
+    <img src="fantasy.jpg" height='250px' width='250px' class="img3" onclick="openLightbox(2)">
+  </div><br>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+
+  <script src="Main.js"></script>
+</body>
+
+<footer>
+  <p style="color: Aquamarine; font-size:24px">Contact us! - Gem Books all rights reserved.
+    <a href="https://www.instagram.com/indigo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Click Me!!</a></p><br>
+
+  <div style="color: mintcream; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; font-size: 20px; font-weight: bold;">
+    <form action="" method="get">
+      First Name: <input type="text" name="first_name"><br>
+      Last Name: <input type="text" name="last_name"><br>
+      E-mail: <input type="text" name="e_mail"><br>
+      Comment: <input type="text" name="comment" size="40"><br>
+      <input type="submit" value="Submit"><br>
+    </form>
+  </div>
+</footer>
 </html>
-   
-	
